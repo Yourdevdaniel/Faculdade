@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset= "UTF-8">
+    <meta id="autor" name="author" content="">
+    <title>Auto Correção - Nintendo Informações</title>
+    <link rel="stylesheet" href="estilos_auto_correcao.css">
+  </head>
+  <body>
+    <h2>Auto Correção da Atividade Nintendo e Validação da Nota de 1,5</h2>
+    <strong><p>Primeiramente, vamos fazer um quebra-gelo. Por gentileza, preencha o seguinte campo:</p>
+    <form id="form">
+      <label for="nome">Nome do aluno responsável pelo preenchimento:</label><p></p>
+      <input type="text" id="nome" name="nome">
+      <button type="submit">Preencher</button>
+    </form>
+    <p>Identificação do Aluno:</strong><br> <span id="nomeAluno"></span></p>
+    <p>Após clicar em "Preencher" e inspencionar o código, o usuário verá que o conteúdo dos
+    metadados de autor foi automaticamente preenchido bem como a identificação do
+    aluno no corpo do HTML. Tudo isso foi feito por meio de um programinha.
+    em JavaScript.</p>
+    <p>A partir daqui o aluno deverá inspencionar o código e editar o seu html
+    para preencher a seguinte tabela, conforme o modelo inicalmente preenchido logo abaixo:</p>
+    <div id="div-tabela">
+   
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan="6">Correção e Análise da Atividade Nintendo - Informações</th>
+        </tr>
+        <tr>
+          <th rowspan="3">Alunos:</th>
+          <!-- ... ou rowspan="n", sendo n o número de integrantes do grupo.
+          Portanto, muita atenção.
+          Neste caso lembre-se de colocar o número adequado de tr para cada
+          integrante do grupo. O primeiro nome é preenchido com a primeira
+          identificação realizada pelo clique do botão "Preencher".
+          Qualquer coisa desenhe a tabela.
+          -->
+          <td colspan="5" id="nomeA">Daniel</td>
+        </tr>
+   
+        <tr>
+          <td colspan="5">Jacyane</td>
+        </tr>
+        <tr>
+          <td colspan="5">Tharik</td>
+        </tr>
+        <tr>
+          <th>Número da instrução</th>
+          <th>Instrução feita pelo professor</th>
+          <th>Conteúdo do gabarito</th>  
+          <th>Explicação do gabarito</th>
+          <th>Conteúdo entregue pelo grupo</th>
+          <th>Explicação do código do grupo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Instrução 0</th>
+          <td>Utilize esse espaço para definir os seguintes metadas dos caracteres especiais para UTF-8.</td>
+          <td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+          <td>A tag meta por meio do atributo charset define as tratativa de caracteres especiais. O valor UTF-8 foi definido por ser amplamente utilizado.</td>
+          <td><code>&lt;meta charset="UTF-8"&gt;</code></td> <!--Coloque o código do seu grupo!-->
+          <td>A utilização da tag, atributos e valores está de acordo com o gabarito.</td> <!--Coloque a justificativa do seu grupo!-->
+        </tr>
+        <tr>
+          <th>Instrução 0.1</th>
+          <td>Utilize esse espaço para definir os autores:
+  - O conteúdo dos autores deve ser obrigatoriamente o nomes completos dos integrantes do grupo. Dica:
+  Para preencher os nomes, informações contidas no endereço https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata podem ajudar.</td>
+          <td><code>&lt;meta name="author" content="Rivaldo Soares do Nascimento"&gt;</code></td>
+          <td>Ao clicar em 'inspencionar na página HTML criada, as informações citadas vão aparecer como uma espécie identificação dos autores.</td>
+          <td><code>&lt;meta name="author" content="Daniel Bernardes, Jacyane Martins e Tharik Luan"/&gt;</code></td>
+          <td><code>Colocamos nossos respecectivos nomes e após uma breve descrição sobre a data e a aula da matéria que fizemos este código</code></td>
+        </tr>
+        <tr>
+          <th>Instrução 0.2</th>
+          <td>Utilize esse espaço para definir o título desta página para Nintendo - Informações</td>
+          <td>&lth1 style="text-align: center">Nintendo - Informações Comerciais&lt/h1&gt</td>
+          <td>Foi criado título principal (h1) em HTML com o título da página, e depois foi centralizado com CSS inline</td>
+          <td><code>&lth1 style="text-align: center">Nintendo - Informações Comerciais&lt/h1&gt</code></td>
+          <td><code>Foi criado título principal (h1) em HTML com o título da página, e depois foi centralizado com CSS inline</code></td>
+        </tr>
+        <tr>
+          <th>Instrução 1</th>
+          <td>Utilize esse espaço para fazer a estilização. Ela poderá ser feita:
+  - Diretamente neste html OU
+  - Por meio da correta importação do arquivo estilos.css.</td>
+          <td>&lt;link rel="stylesheet" href="estilos.css"&gt;
+          </td>
+          <td><code>a tag link é para linkar o estilo css a pagina html usando
+            rel para ser a relação entre o documento e o estilo que esta sendo aplicado
+            o href para colocar o link do arquivo
+          </code></td>
+          <td><code>&lt;link rel="stylesheet" href="estilos.css"&gt;
+          </code></td>
+          <td><code>A tag link assim como no gabarito foi utilizada corretamente
+            com o rel para definir a relação e o href para o link do arquivo
+          </code></td>
+        </tr>
+        <tr>
+          <th>Instrução 2</th>
+          <td>!--
+            Instrução 2:
+          Utilize esse espaço para fazer a importação da imagem constante no link: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/1200px-Nintendo.svg.png .
+           
+            --</td>
+          <td>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/1200px-Nintendo.svg.png"
+            width="250"  
+            alt="Logo Nintendo"&gt;
+</td>
+          <td>Foi utilizado a tag img com src para colocar a imagem junto com a source(fonte) e usando width para
+            demarcar a largura junto com alt para obter a descrição textual da imagem
+          </td>  
+          <td>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/1200px-Nintendo.svg.png" alt="Logo Nintendo" width="250px"
+            title="Brazil Official Site"&gt;
+</td>
+          <td>Usamos a mesma tag img com src para colocar a imagem no site com alt para a descriçaõ da imagem
+            com width para definir largura e title para exibir um titulo quando o mouse passar por cima da imagem
+          </td>
+        </tr>
+        <tr>
+          <th>Instrução 2.1</th>
+          <td>Instrução 2.1:
+            A imagem deverá obrigatoriamente:
+              - Ser um link clicável;
+              - Levar ao site https://www.nintendo.com/pt-br/, o qual deverá ser aberto em uma nova guia;
+              - Exibir "Brazil Official Site" quando o mouse repousar sobre a imagem;
+              - A largura da imagem deve ser de 250px
+              - Deverá possuir um texto alternativo de "Logo Nintendo".</td>
+          <td>&lt;a href="https://www.nintendo.com" target="_blank" alt="Logo Nintendo" title="Official Site" target="_blank"&gt;
+            &lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/1200px-Nintendo.svg.png"
+                 width="250"
+                 alt="Logo Nintendo"&gt;
+        &lt;/a&gt;
+</td>
+          <td>Usou a tag "a para abrir a tag de um link que possa clicar dentro da tag foi utilizada também
+            a img para o link ficar dentro da imagem sendo assim que clicar na imagem ser redirecionado ao site
+            e o title para exibir a mensagem quando colocar o mouse encima
+          </td>
+          <td>&lt;a href="https://www.nintendo.com/pt-br/" target="_blank"&gt;
+            &lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/1200px-Nintendo.svg.png" alt="Logo Nintendo" width="250px"
+            title="Brazil Official Site"&gt;
+          &lt;/a&gt
+</td>
+          <td>A utilização da tag, atributos e valores está de acordo com o gabarito.</td>
+        </tr>
+        <tr>
+            <th>Instrução 3</th>
+            <td>!--Instrução 3:
+              &lt;tag de criação de item&gt;&lt;tag de criação de link (porta de saída) para o endereço exato #historia, entre aspas&gt;História&lt;fechamento da tag link(porta de saída)&gt;&lt;fechamento da tag de criação de item&gt;
+        - Segundo Item:
+        &lt;tag de criação de item&gt;&lt;tag de criação de link (porta de saída) para o endereço exato #console, entre aspas&gt;Consoles&lt;fechamento da tag link(porta de saída)&gt;&lt;fechamento da tag de criação de item&gt;
+        - Terceiro Item:
+        &lt;tag de criação de item&gt;&lt;tag de criação de link (porta de saída) para o endereço exato #jogos, entre aspas&gt;Top Jogos (Entidade do & sozinho) Indicadores Econômicos&lt;fechamento da tag link(porta de saída)&gt;&lt;fechamento da tag de criação de item&gt;.
+        --&gt;
+</td>
+            <td>&lt;nav&gt;
+              &lt;ul type="circle"&gt;
+                  &lt;li&gt;&lt;a href="#historia"&gt;História&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#console"&gt;Console&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#jogos"&gt;Top Jogos amp; Indicadores Econômicos&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+          &lt;/nav&gt;</td>
+            <td>O "nav" é usada para agrupar links, já o "ul" é uma lista não ordenada, é o "li" é  usado dentro de "ul" (ou "ol", listas ordenadas) para definir cada item da lista.   </td>
+            <td>&lt;nav&gt;
+              &lt;ul type="circle"&gt;
+                  &lt;li&gt;&lt;a href="#historia"&gt;História&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#console"&gt;Console&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#jogos"&gt;Top Jogos amp; Indicadores Econômicos&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+          &lt;/nav&gt;</td>
+            <td>O "nav" é usada para agrupar links, já o "ul" é uma lista não ordenada, é o "li" é  usado dentro de "ul" (ou "ol", listas ordenadas) para definir cada item da lista.   </td>
+           
+        <tr>
+            <th>Instrução 4</th>
+            <td>!--
+              Instrução 4:
+              Utilize esse espaço para, por meio da tag específica para isso, criar uma tabela que tenha:
+              - Um atributo de borta definido para "1";
+              - O conteúdo das três primeiras linhas definido como um cabeçalho;
+              - A correta utilização de colspan conforme o arquivo anexo a essa atividade;
+              - A correta utilização de rowspan conforme o arquivo anexo a essa atividade;
+              - Todos os dados preenchidos conforme o arquivo anexo a essa atividade.
+              Observação:
+              - O símbolo da barra vertical deverá ser representado por meio de sua entidade.
+              --</td>
+              <td>
+                &lt;table border="1"&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th colspan="4"&gt;Evolução dos Sistemas Nintendo&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;th rowspan="2"&gt;Geração&lt;/th&gt;
+                        &lt;th colspan="3"&gt;Detalhes Técnicos&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Console&lt;/th&gt;
+                        &lt;th&gt;Ano&lt;/th&gt;
+                        &lt;th&gt;Vendas (mi)*&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+
+
+                    &lt;tr&gt;
+                        &lt;td rowspan="3"&gt;1ª-3ª Geração&lt;br&gt;(1977-1989)&lt;/td&gt;
+                        &lt;td&gt;Color TV-Game&lt;/td&gt;
+                        &lt;td&gt;1977&lt;/td&gt;
+                        &lt;td&gt;3,0&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;NES&lt;/td&gt;
+                        &lt;td&gt;1983&lt;/td&gt;
+                        &lt;td&gt;61,9&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Game Boy&lt;/td&gt;
+                        &lt;td&gt;1989&lt;/td&gt;
+                        &lt;td&gt;118,7&lt;/td&gt;
+                    &lt;/tr&gt;
+   
+                    &lt;tr&gt;
+                        &lt;td rowspan="2"&gt;4ª-5ª Geração&lt;br&gt;(1990-1996)&lt;/td&gt;
+                        &lt;td&gt;Super Nintendo&lt;/td&gt;
+                        &lt;td&gt;1990&lt;/td&gt;
+                        &lt;td&gt;49,1&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Nintendo 64&lt;/td&gt;
+                        &lt;td&gt;1996&lt;/td&gt;
+                        &lt;td&gt;32,9&lt;/td&gt;
+                    &lt;/tr&gt;
+       
+                    &lt;tr&gt;
+                        &lt;td rowspan="2"&gt;6ª Geração&lt;br&gt;(2001-2004)&lt;/td&gt;
+                        &lt;td&gt;GameCube&lt;/td&gt;
+                        &lt;td&gt;2001&lt;/td&gt;
+                        &lt;td&gt;21,7&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Game Boy Advance&lt;/td&gt;
+                        &lt;td&gt;2001&lt;/td&gt;
+                        &lt;td&gt;81,5&lt;/td&gt;
+                    &lt;/tr&gt;
+       
+                    &lt;tr&gt;
+                        &lt;td rowspan="3"&gt;7ª Geração&lt;br&gt;(2004-2011)&lt;/td&gt;
+                        &lt;td&gt;Nintendo DS&lt;/td&gt;
+                        &lt;td&gt;2004&lt;/td&gt;
+                        &lt;td&gt;154,02&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Wii&lt;/td&gt;
+                        &lt;td&gt;2006&lt;/td&gt;
+                        &lt;td&gt;101,63&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;DSi&lt;/td&gt;
+                        &lt;td&gt;2008&lt;/td&gt;
+                        &lt;td&gt;41,0&lt;/td&gt;
+                    &lt;/tr&gt;
+       
+                    &lt;tr&gt;
+                        &lt;td rowspan="2"&gt;8ª Geração&lt;br&gt;(2011-2017)&lt;/td&gt;
+                        &lt;td&gt;Nintendo 3DS&lt;/td&gt;
+                        &lt;td&gt;2011&lt;/td&gt;
+                        &lt;td&gt;75,94&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Wii U&lt;/td&gt;
+                        &lt;td&gt;2012&lt;/td&gt;
+                        &lt;td&gt;13,56&lt;/td&gt;
+                    &lt;/tr&gt;
+       
+                    &lt;tr&gt;
+                        &lt;td rowspan="2"&gt;9ª Geração&lt;br&gt;(2017-Presente)&lt;/td&gt;
+                        &lt;td&gt;Nintendo Switch&lt;/td&gt;
+                        &lt;td&gt;2017&lt;/td&gt;
+                        &lt;td&gt;152,0*&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Switch 2&lt;/td&gt;
+                        &lt;td&gt;2025&lt;/td&gt;
+                        &lt;td&gt;15,0**&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+                &lt;tfoot&gt;
+                    &lt;tr&gt;
+                        &lt;td colspan="4"&gt;
+                            *mi = milhões de unidades &vert; **Previsão inicial&lt;br&gt;
+                            Dados atualizados: Junho/2024 (Fonte: Relatórios Nintendo Co., Ltd)
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tfoot&gt;
+            &lt;/table&gt;
+        &lt;/section&gt;
+</td>
+            <td>Foi utilizada a tag table para definir a tabela então um thead para abrir o cabeçalho
+              e tbody para abrir o corpo principal dentro do body foi usado tr para criar novas linhas
+              th para definir cabeçalhos td para um dado normal da tabela foi usado também colspan para fazer
+              o dado ocupar varias colunas e o rowpsan para ocupar varias linhas o br para fazer a quebra de linha
+              então o section para agrupar o conteudo</td>
+            <td>&lt;table border="1"&gt;
+              &lt;tr&gt;
+                  &lt;th colspan="5"&gt;Evolução dos Sistemas Nintendo&lt;/th&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;th rowspan="2"&gt;Geração&lt;/th&gt; &lt;th colspan="4"&gt;Detalhes Tecnicos&lt;/th&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;th colspan="1"&gt;Console&lt;/th&gt; &lt;th colspan="1"&gt;Anos&lt;/th&gt; &lt;th colspan="1"&gt;Vendas (mi*)&lt;/th&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td rowspan="4"&gt;1° a 3° geração &lt;br&gt;(1997-1989)&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;Color TV-Game&lt;/td&gt;
+                  &lt;td&gt;1997&lt;/td&gt;
+                  &lt;td&gt;3,0&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;Nes&lt;/td&gt;
+                  &lt;td&gt;1983&lt;/td&gt;
+                  &lt;td&gt;61,9&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;Gameboy&lt;/td&gt;
+                  &lt;td&gt;1989&lt;/td&gt;
+                  &lt;td&gt;118,7&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td rowspan="3"&gt;4°-5° geração &lt;br&gt;(1990-1996)&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;Super Nintendo&lt;/td&gt;
+                  &lt;td&gt;1990&lt;/td&gt;
+                  &lt;td&gt;49,1&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;Nintendo 64&lt;/td&gt;
+                  &lt;td&gt;1996&lt;/td&gt;
+                  &lt;td&gt;32,9&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td rowspan="3"&gt;6° Geração &lt;br&gt;(2001-2004)&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;GameCube&lt;/td&gt;
+                  &lt;td&gt;2001&lt;/td&gt;
+                  &lt;td&gt;21,7&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;Game boy Advance&lt;/td&gt;
+                  &lt;td&gt;2001&lt;/td&gt;
+                  &lt;td&gt;81,5&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td rowspan="4"&gt;7° Geração &lt;br&gt;(2001-2004)&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;Nintendo DS&lt;/td&gt;
+                  &lt;td&gt;2004&lt;/td&gt;
+                  &lt;td&gt;154,02&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;Wii&lt;/td&gt;
+                  &lt;td&gt;2006&lt;/td&gt;
+                  &lt;td&gt;101,63&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;DSI&lt;/td&gt;
+                  &lt;td&gt;2008&lt;/td&gt;
+                  &lt;td&gt;41,0&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td rowspan="3"&gt;8° Geração &lt;br&gt;(2001-2004)&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;Nintendo 3DS&lt;/td&gt;
+                  &lt;td&gt;2011&lt;/td&gt;
+                  &lt;td&gt;75,94&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;Wii U&lt;/td&gt;
+                  &lt;td&gt;2012&lt;/td&gt;
+                  &lt;td&gt;13,56&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td rowspan="3"&gt;9° Geração &lt;br&gt;(2001-2004)&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;Nintendo Switch&lt;/td&gt;
+                  &lt;td&gt;2017&lt;/td&gt;
+                  &lt;td&gt;152,0**&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td&gt;Switch 2&lt;/td&gt;
+                  &lt;td&gt;2025&lt;/td&gt;
+                  &lt;td&gt;15,00**&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td colspan="4"&gt;*mi = milhões de unidade &vert; **Previsão inicial &lt;br&gt;
+                      Dados atualizados: Junho/2024 (fonte: Relatórios Nintendo Co., Ltd)
+                  &lt;/td&gt;
+              &lt;/tr&gt;
+          &lt;/table&gt;
+          </td>
+            <td>  A utilização da tag, atributos e valores está de acordo com o gabarito.</td>
+        </tr>
+        <tr>
+          <th>Instrução 5</th>
+          <td>!--
+            Instrução 5:
+            Utilize esse espaço para fazer a importação da imagem constante no link: https://static.vecteezy.com/system/resources/thumbnails/013/007/615/small_2x/set-of-console-game-device-handheld-portable-free-png.png.
+</td>
+          <td>&ltimg src="https://static.vecteezy.com/system/resources/thumbnails/013/007/615/small_2x/set-of-console-game-device-handheld-portable-free-png.png"</td>
+          <td>Uma tag de imagem junto com scr foi adicionado para encaminhar o link hospedado em um site em png.</td>
+          <td>&ltimg src="https://static.vecteezy.com/system/resources/thumbnails/013/007/615/small_2x/set-of-console-game-device-handheld-portable-free-png.png"</td>
+          <td>Uma tag de imagem junto com scr foi adicionado para encaminhar o link hospedado em um site em png.</td>
+        </tr>
+        <tr>
+          <th>Instrução 5.1</th>
+          <td>Instrução 5.1:
+            A imagem deverá obrigatoriamente:
+            - Ser clicável;
+            - Levar ao site https://www.nintendo.com/pt-br/gaming-systems/switch/, o qual deverá ser aberto em uma nova guia;
+            - Exibir "Nintendo Switch Official Site" quando o mouse repousar sobre a imagem;
+            - A largura da imagem deve ser de 450px
+            - Deverá possuir um texto alternativo de "Nintendo Switch".</td>
+          <td>&ltimg src="https://static.vecteezy.com/system/resources/thumbnails/013/007/615/small_2x/set-of-console-game-device-handheld-portable-free-png.png"
+            width="450"
+            alt="Nintendo Switch"&gt</td>
+          <td>A imagem foi configurada para ser clicável, encaminhar para a página da Nintendo em uma nova guia e ajustada em 450px e com texto alternativo para exibição do conteúdo da imagem quando o mouse for repousado sobre ele</td>
+          <td>&ltimg src="https://static.vecteezy.com/system/resources/thumbnails/013/007/615/small_2x/set-of-console-game-device-handheld-portable-free-png.png"
+            width="450"
+            alt="Nintendo Switch"&gt</td>
+          <td>A imagem foi configurada para ser clicável, encaminhar para a página da Nintendo em uma nova guia e ajustada em 450px e com texto alternativo para exibição do conteúdo da imagem quando o mouse for repousado sobre ele</td>
+        </tr>
+        <tr>
+          <th>Instrução 6</th>
+          <td>!--
+            Instrução 6:
+            Utilize esse espaço para criar uma lista ordenada em que:
+            - Ela deverá possuir dois itens, sendo eles:
+              - Mario Kart 8 Deluxe - 60(entidade nbsp - dê um google em caso de dúvidas)milhões
+                - Crossing: New Horizons - 42(entidade nbsp)milhões
+            - A lista deve iniciar na vigésima quarta letra do alfabéto em maísculo.
+            --</td>
+          <td>
+               &lt;ol type="A" start="24"&gt;
+                    &lt;li&gt;Mario Kart 8 Deluxe - 60 milhões&lt;/li&gt;
+                    &lt;li&gt;Animal Crossing: New Horizons - 42 Milhões &lt;/li&gt;
+                &lt;/ol&gt;
+                &lt;table border="1"&gt;
+                    &lt;tr&gt;
+                        &lt;th colspan="6"&gt; Indicadores Econômicos (em US$ bilhões / ; bilhões)**&lt;/th&gt;
+                    &lt;/tr&gt;
+                       
+                    &lt;tr&gt;
+                        &lt;th rowspan="2"&gt;Ano&lt;/th&gt;
+                        &lt;th colspan="3"&gt;Vendas&lt;/th&gt;
+                        &lt;th colspan="3"&gt;Resultados&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Hardware&lt;br&gt;(USamp;dollar;/yen;)&lt;/th&gt;
+                        &lt;th&gt;Software&lt;br&gt;(USamp;dollar;/yen;)&lt;/th&gt;
+                        &lt;th&gt;Serviços&lt;br&gt;(USamp;dollar;/yen;)&lt;/th&gt;
+                        &lt;th&gt;Receita&lt;br&gt;(USamp;dollar;/yen;)&lt;/th&gt;
+                        &lt;th&gt;Lucro&lt;br&gt;(USamp;dollar;/yen;)&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;2024&lt;/td&gt;
+                        &lt;td&gt;7.46 / 1,042.3&lt;/td&gt;
+                        &lt;td&gt;11.93 / 1,670.0&lt;/td&gt;
+                        &lt;td&gt;3.78 / 528.9&lt;/td&gt;
+                        &lt;td&gt;23.15 / 3,241.2&lt;/td&gt;
+                        &lt;td&gt;6.93 / 970.5&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;2025&lt;/td&gt;
+                        &lt;td&gt;5.25 / 734.8&lt;/td&gt;
+                        &lt;td&gt;8.32 / 1,164.9&lt;/td&gt;
+                        &lt;td&gt;2.02 / 282.5&lt;/td&gt;
+                        &lt;td&gt;15.59 / 2,182.2&lt;/td&gt;
+                        &lt;td&gt;4.68 / 654.7&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;2026***&lt;/td&gt;
+                        &lt;td&gt;8.57 / 1,200.0&lt;/td&gt;
+                        &lt;td&gt;13.57 / 1,900.0&lt;/td&gt;
+                        &lt;td&gt;2.29 / 320,0&lt;/td&gt;
+                        &lt;td&gt;24.43 / 3,420.0&lt;/td&gt;
+                        &lt;td&gt;7.33 / 1,026.0&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td colspan="6"&gt;**cotação 1 USD = 140 yen; (média 2023)&lt;br&gt;**Previsão com o Lançamento do Switch 2&lt;br&gt;amp;dollar; = dólar americano vert; yen; = iene Japonês vert; Valores arrecadados&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            &lt;/body&gt;
+       
+        &lt;/section&gt;</td>
+          <td>&lt;section&gt;: Agrupa uma seção temática da página.
+
+            &lt;body&gt;: Contém o conteúdo principal da página.
+            
+            &lt;ol&gt;: Lista ordenada (aqui, com letras maiúsculas e começando do 24).
+            
+            &lt;li&gt;: Item dentro da lista.
+            
+            &lt;table&gt;: Cria uma tabela.
+            
+            &lt;tr&gt;: Linha da tabela.
+            
+            &lt;th&gt;: Cabeçalho da tabela (células em negrito).
+            
+            &lt;td&gt;: Célula comum da tabela.
+            
+            &lt;br&gt;: Quebra de linha dentro de uma célula.</td>
+          <td>&lt;section id="jogos"&gt;
+           
+            &lt;body&gt;
+                &lt;ol type="A" start="24"&gt;
+                    &lt;li&gt;Mario Kart 8 Deluxe - 60 milhões&lt;/li&gt;
+                    &lt;li&gt;Animal Crossing: New Horizons - 42 Milhões &lt;/li&gt;
+                &lt;/ol&gt;
+                &lt;table border="1"&gt;
+                    &lt;tr&gt;
+                        &lt;th colspan="6"&gt; Indicadores Econômicos (em US$ bilhões / yen; bilhões)**&lt;/th&gt;
+                    &lt;/tr&gt;
+                       
+                    &lt;tr&gt;
+                        &lt;th rowspan="2"&gt;Ano&lt;/th&gt;
+                        &lt;th colspan="3"&gt;Vendas&lt;/th&gt;
+                        &lt;th colspan="3"&gt;Resultados&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Hardware&lt;br&gt;(USamp;dollar;/yen;)&lt;/th&gt;
+                        &lt;th&gt;Software&lt;br&gt;(USamp;dollar;/yen;)&lt;/th&gt;
+                        &lt;th&gt;Serviços&lt;br&gt;(USamp;dollar;/yen;)&lt;/th&gt;
+                        &lt;th&gt;Receita&lt;br&gt;(USamp;dollar;/yen;)&lt;/th&gt;
+                        &lt;th&gt;Lucro&lt;br&gt;(USamp;dollar;/yen;)&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;2024&lt;/td&gt;
+                        &lt;td&gt;7.46 / 1,042.3&lt;/td&gt;
+                        &lt;td&gt;11.93 / 1,670.0&lt;/td&gt;
+                        &lt;td&gt;3.78 / 528.9&lt;/td&gt;
+                        &lt;td&gt;23.15 / 3,241.2&lt;/td&gt;
+                        &lt;td&gt;6.93 / 970.5&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;2025&lt;/td&gt;
+                        &lt;td&gt;5.25 / 734.8&lt;/td&gt;
+                        &lt;td&gt;8.32 / 1,164.9&lt;/td&gt;
+                        &lt;td&gt;2.02 / 282.5&lt;/td&gt;
+                        &lt;td&gt;15.59 / 2,182.2&lt;/td&gt;
+                        &lt;td&gt;4.68 / 654.7&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;2026***&lt;/td&gt;
+                        &lt;td&gt;8.57 / 1,200.0&lt;/td&gt;
+                        &lt;td&gt;13.57 / 1,900.0&lt;/td&gt;
+                        &lt;td&gt;2.29 / 320,0&lt;/td&gt;
+                        &lt;td&gt;24.43 / 3,420.0&lt;/td&gt;
+                        &lt;td&gt;7.33 / 1,026.0&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td colspan="6"&gt;**cotação 1 USD = 140 yen; (média 2023)&lt;br&gt;**Previsão com o Lançamento do Switch 2&lt;br&gt;amp;dollar; = dólar americano vert; yen; = iene Japonês &vert; Valores arrecadados&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            &lt;/body&gt;
+       
+        &lt;/section&gt;</td>
+          <td>
+            &lt;id&gt;: ele ta indentidade única a um objeto. 
+            
+            &lt;section&gt;: Agrupa uma seção temática da página.
+
+            &lt;body&gt;: Contém o conteúdo principal da página.
+            
+            &lt;ol&gt;: Lista ordenada (aqui, com letras maiúsculas e começando do 24).
+            
+            &lt;li&gt;: Item dentro da lista.
+            
+            &lt;table&gt;: Cria uma tabela.
+            
+            &lt;tr&gt;: Linha da tabela.
+            
+            &lt;th&gt;: Cabeçalho da tabela (células em negrito).
+            
+            &lt;td&gt;: Célula comum da tabela.
+            
+            &lt;br&gt;: Quebra de linha dentro de uma célula.</td>
+        </tr>
+        <tr>
+          <th>Instrução 7
+          </th>
+          <td>
+            Instrução 7:
+            Utilize esse espaço para, por meio da tag específica para isso, criar uma tabela que tenha:
+            - Um atributo de borta definido para "1";
+            - O conteúdo das três primeiras linhas definido como um cabeçalho;
+            - A correta utilização de colspan conforme o arquivo anexo a essa atividade;
+            - A correta utilização de rowspan conforme o arquivo anexo a essa atividade;
+            - Todos os dados preenchidos conforme o arquivo anexo a essa atividade.
+            Observação:
+            - O símbolo da barra vertical deverá ser representado por meio de sua entidade.
+            - O símbolo da moeda YEN deve ser representado por meio de sua entidade.
+        </td>
+        <td>
+          &lt;table border="1"&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th colspan="6"&gt;Indicadores Econômicos (em US$ bilhões / yen; bilhões)**&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;th rowspan="2"&gt;Ano&lt;/th&gt;
+                        &lt;th colspan="3"&gt;Vendas&lt;/th&gt;
+                        &lt;th colspan="2"&gt;Resultados&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Hardware&lt;br&gt;(US$ / yen;)&lt;/th&gt;
+                        &lt;th&gt;Software&lt;br&gt;(US$ / yen;)&lt;/th&gt;
+                        &lt;th&gt;Serviços&lt;br&gt;(US$ / yen;)&lt;/th&gt;
+                        &lt;th&gt;Receita&lt;br&gt;(US$ / yen;)&lt;/th&gt;
+                        &lt;th&gt;Lucro&lt;br&gt;(US$ / yen;)&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;2024&lt;/td&gt;
+                        &lt;td&gt;7.45nbsp;/nbsp;1,042.3&lt;/td&gt;
+                        &lt;td&gt;11.93nbsp;/nbsp;1,670.0&lt;/td&gt;
+                        &lt;td&gt;3.78nbsp;/nbsp;528.9&lt;/td&gt;
+                        &lt;td&gt;23.15nbsp;/nbsp;3,241.2&lt;/td&gt;
+                        &lt;td&gt;6.93nbsp;/nbsp;970.5&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;2025&lt;/td&gt;
+                        &lt;td&gt;5.25nbsp;/nbsp;734.8&lt;/td&gt;
+                        &lt;td&gt;8.32nbsp;/nbsp;1,164.9&lt;/td&gt;
+                        &lt;td&gt;2.02nbsp;/nbsp;282.5&lt;/td&gt;
+                        &lt;td&gt;15.59nbsp;/nbsp;2,182.2&lt;/td&gt;
+                        &lt;td&gt;4.68nbsp;/nbsp;654.7&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;2026***&lt;/td&gt;
+                        &lt;td&gt;8.57nbsp;/nbsp;1,200.0&lt;/td&gt;
+                        &lt;td&gt;13.57nbsp;/nbsp;1,900.0&lt;/td&gt;
+                        &lt;td&gt;2.29nbsp;/nbsp;320.0&lt;/td&gt;
+                        &lt;td&gt;24.43nbsp;/nbsp;3,420.0&lt;/td&gt;
+                        &lt;td&gt;7.33nbsp;/nbsp;1,026.0&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+                &lt;tfoot&gt;
+                    &lt;tr&gt;
+                        &lt;td colspan="6"&gt;
+                            **Cotação: 1nbsp;USDnbsp;=nbsp;140nbsp;yen; (média 2023)&lt;br&gt;
+                            ***Previsão com o Lançamento do Switch 2&lt;br&gt;
+                            &dollar; = dólar americano &vert; yen; = iene japonês &vert; Valores arredondados
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tfoot&gt;
+            &lt;/table&gt;
+        &lt;/section&gt;
+
+        </td>
+          <td>foi usado table para criar a tabela
+            então tr e th e td para criar as linhas
+            cabeçalhos e a célula de dados da tabela
+            o colspan define o numero de colunas que vai ocupar
+            e a rowspan o numero de linhas
+            o tbody para definir o corpo
+            tfood para fazer o rodape</td>
+          <td>&lt;table border="1"&gt;
+            &lt;tr&gt;
+                &lt;th colspan="6"&gt; Indicadores Econômicos (em US$ bilhões / yen; bilhões)**&lt;/th&gt;
+            &lt;/tr&gt;
+       
+            &lt;tr&gt;
+                &lt;th rowspan="2"&gt;Ano&lt;/th&gt;
+                &lt;th colspan="3"&gt;Vendas&lt;/th&gt;
+                &lt;th colspan="3"&gt;Resultados&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Hardware&lt;br&gt;(USamp;dollar;/yen;)&lt;/th&gt;
+                &lt;th&gt;Software&lt;br&gt;(USamp;dollar;/yen;)&lt;/th&gt;
+                &lt;th&gt;Serviços&lt;br&gt;(USamp;dollar;/yen;)&lt;/th&gt;
+                &lt;th&gt;Receita&lt;br&gt;(USamp;dollar;/yen;)&lt;/th&gt;
+                &lt;th&gt;Lucro&lt;br&gt;(USamp;dollar;/yen;)&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;2024&lt;/td&gt;
+                &lt;td&gt;7.46 / 1,042.3&lt;/td&gt;
+                &lt;td&gt;11.93 / 1,670.0&lt;/td&gt;
+                &lt;td&gt;3.78 / 528.9&lt;/td&gt;
+                &lt;td&gt;23.15 / 3,241.2&lt;/td&gt;
+                &lt;td&gt;6.93 / 970.5&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;2025&lt;/td&gt;
+                &lt;td&gt;5.25 / 734.8&lt;/td&gt;
+                &lt;td&gt;8.32 / 1,164.9&lt;/td&gt;
+                &lt;td&gt;2.02 / 282.5&lt;/td&gt;
+                &lt;td&gt;15.59 / 2,182.2&lt;/td&gt;
+                &lt;td&gt;4.68 / 654.7&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;2026***&lt;/td&gt;
+                &lt;td&gt;8.57 / 1,200.0&lt;/td&gt;
+                &lt;td&gt;13.57 / 1,900.0&lt;/td&gt;
+                &lt;td&gt;2.29 / 320,0&lt;/td&gt;
+                &lt;td&gt;24.43 / 3,420.0&lt;/td&gt;
+                &lt;td&gt;7.33 / 1,026.0&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td colspan="6"&gt;**cotação 1 USD = 140 yen; (média 2023)&lt;br&gt;**Previsão com o Lançamento do Switch 2&lt;br&gt;amp;dollar; = dólar americano vert; yen; = iene Japonês &vert; Valores arrecadados&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;</td>
+          <td>A utilização da tag, atributos e valores está de acordo com o gabarito.</td>
+        </tr>
+        <tr>
+          <th>Instrução 8</th>
+          <td>
+            Instrução 8:
+            Utilize esse espaço para criar uma lista não-ordenada a qual deverá estilizar seus itens por meio de um quadrado preenchido. Os itens deverão estar preenchidos conforme o arquivo em anexo.
+            </td>
+          <td>&lt;ul type="square"&gt;
+            &lt;li&gt;Sede: Kyoto, *****ão&lt;/li&gt;
+            &lt;li&gt;Fundada: 23/09/1889&lt;/li&gt;
+            &lt;li&gt;Presidente: Shuntaro Furukawa&lt;/li&gt;
+        &lt;/ul&gt;
+        </td>
+          <td>Foi usado Ul para abrir a lista nao ordenada e o li para fazer os objetos da lista</td>
+          <td>&lt;ul&gt;
+            &lt;li&gt;Sede: Kyoto, *****ão&lt;/li&gt;
+            &lt;li&gt;Fundada: 23/09/1889&lt;/li&gt;
+            &lt;li&gt;Presidente: Shuntaro Furukawa&lt;/li&gt;
+        &lt;/ul&gt;
+        </td>
+          <td>A utilização da tag, atributos e valores está de acordo com o gabarito.</td>
+        </tr>
+        <tr>
+          <th>Instrução 9</th>
+          <td>
+            Instrução 9:
+            Utilize esse espaço para cirar um botão por meio da tag button (sim, temos uma novidade!).</td>
+          <td>&lt;button&gt;Suporte Oficial&lt;/button&gt;  </td>
+          <td>Foi usado a tag button para fazer um botão com a mensagem designada</td>
+          <td>&lt;button&gt;Suporte Oficial do Brasil&lt;/button&gt;</td>
+          <td>A utilização da tag, atributos e valores está de acordo com o gabarito.
+          </td>
+        </tr>
+        <tr>
+          <th>Instrução 9.1</th>
+          <td>Instrução 9.1
+            O botão deverá obrigatoriamente:
+        - Ser um link clicável;
+        - Levar ao site https://pt-americas-support.nintendo.com/, o qual deverá ser aberto em uma nova guia;
+        - Ter seu conteúdo definido para Suporte Oficial do Brasil.</td>
+          <td>&lt;a href="https://www.nintendo.com/contact/" target="_blank"&gt;
+            &lt;button&gt;Suporte Oficial&lt;/button&gt;
+        &lt;/a&gt;        
+        </td>
+          <td>Foi usado a tag a para fazer o link junto com href para ser a ligação foi usado ''target'' para
+            fazer o link ser aberto em outra guia
+          </td>
+          <td>&lt;a href="https://pt-americas-support.nintendo.com/" target="_blank"&gt;
+            &lt;button&gt;Suporte Oficial do Brasil&lt;/button&gt;
+        &lt;/a&gt;
+          </td>
+          <td>A utilização da tag, atributos e valores está de acordo com o gabarito.</td>
+        </tr>
+        <tr>
+          <th>Instrução 10</th>
+          <td> Instrução 10:
+            Utilize esse espaço para criar dois parágrafos os quais deverão seguir a seguinte estrutura:
+            (entidade de Copyright) 2024 Nintendo of America Inc. (entidade de marca registrada)
+            (entidade de estrelas) Dados históricos atualizados em 2024 (entidade de estrela) </td>
+          <td>&lt;footer&gt;
+            &lt;p&gt;amp;copy; 2024 Nintendo of America Inc. amp;reg;&lt;/p&gt;
+            &lt;p&gt;amp;star; Dados históricos atualizados em 2024 amp;star;&lt;/p&gt;
+        &lt;/footer&gt;
+        </td>
+          <td>abriu a tag footer para definir o rodapé
+            o &lt;p&gt; para definir os parágrafos no paragrafo
+            foi usado o &copy para fazer o c comercial
+            o &reg para fazer o símbolo da marca registrada
+            e o &star para representar a estrela e fechando a tag</td>
+          <td>&lt;footer&gt;
+            &lt;p&gt; amp;copy; Nintendo of America Inc. amp;copy; &lt;br&gt; amp;star; Dados históricos atualizados em 2024 amp;star; &lt;/p&gt;
+        &lt;/footer&gt;</td>
+          <td>  A utilização da tag, atributos e valores está de acordo com o gabarito.</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <p><strong>Foco nos estudos:</strong></p>
+   
+    <p>Importante listar as tag e recursos já compreendidos bem como aqueles que precisam de maior atenção por parte do grupo:</p>
+    <table border="1" width="600">
+      <thead>
+        <tr>
+          <th colspan="2">Tags amp; Recursos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th colspan="2">Tags</th>
+        </tr>
+        <tr>
+          <th>Compreendidas</th>
+          <th>Não Tão Compreendidas</th>
+        </tr>
+        <tr>
+           <td>
+            <ul>
+              <li>&lt;!DOCTYPE html&gt;</li>
+              <li>&lt;html&gt;</li>
+              <li>&lt;head&gt;</li>
+              <li>&lt;meta&gt;</li>
+              <li>&lt;title&gt;</li>
+              <li>&lt;link&gt;</li>
+              <li>&lt;body&gt;</li>
+              <li>&lt;h2&gt;</li>
+              <li>&lt;strong&gt;</li>
+              <li>&lt;p&gt;</li>
+              <li>&lt;form&gt;</li>
+              <li>&lt;label&gt;</li>
+              <li>&lt;input&gt;</li>
+              <li>&lt;button&gt;</li>
+              <li>&lt;span&gt;</li>
+              <li>&lt;div&gt;</li>
+              <li>&lt;table&gt;</li>
+              <li>&lt;thead&gt;</li>
+              <li>&lt;tr&gt;</li>
+              <li>&lt;th&gt;</li>
+              <li>&lt;td&gt;</li>
+              <li>&lt;tbody&gt;</li>
+              <li>&lt;tfoot&gt;</li>
+              <li>&lt;nav&gt;</li>
+              <li>&lt;ul&gt;</li>
+              <li>&lt;li&gt;</li>
+              <li>&lt;a&gt;</li>
+              <li>&lt;img&gt;</li>
+              <li>&lt;ol&gt;</li>
+              <li>&lt;section&gt;</li>
+            </ul>           
+           </td>  
+          <td></td>
+        </tr>
+        <tr>
+          <th colspan="2">Recursos</th>
+        </tr>
+        <tr>
+          <th>Compreendidos</th>
+          <th>Não Tão Compreendidos</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>charset</li>
+              <li>id</li>
+              <li>name</li>
+              <li>content</li>
+              <li>rel</li>
+              <li>href</li>
+              <li>for</li>
+              <li>type</li>
+              <li>border</li>
+              <li>colspan</li>
+              <li>"rowspan" </li>
+              <li>target</li>
+              <li>alt</li>
+              <li>title</li>
+              <li>src</li>
+              <li>width</li>
+              <li>start</li>
+            </ul>
+            </td>  
+          <td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>Caso tenha salvado todos os arquivos em uma mesma pastas, <a href="index_gabarito.html" target="_blank">clique aqui para acesso ao gabarito</a></strong>.</p>
+    <p>Bom, espero que a Atividade Nintendo - Informações possam ser associadas ao termo Entendo - Informações. &#128517;</p>
+    </div>
+    <script>
+      document.getElementById('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+ 
+        const nome = document.getElementById('nome').value;
+ 
+        document.getElementById('nomeAluno').textContent = `${nome}`;
+        document.getElementById('autor').content = `${nome}`;
+        document.getElementById('nomeA').textContent = `${nome}`;
+        document.getElementById('nome').value = ``;
+      });
+    </script>
+  </body>
+</html>
