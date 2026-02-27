@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasolina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="tabela-desconto">
+        <h3>⛽ Tabela de Descontos</h3>
+        <table>
+            <tr>
+                <th>Combustível</th>
+                <th>Litros</th>
+                <th>Desconto</th>
+                <th>Preço/L</th>
+            </tr>
+            <tr>
+                <td>Gasolina</td>
+                <td>20 a 30</td>
+                <td>5%</td>
+                <td>R$ 7,00</td>
+            </tr>
+            <tr>
+                <td>Gasolina</td>
+                <td>+30</td>
+                <td>10%</td>
+                <td>R$ 7,00</td>
+            </tr>
+            <tr>
+                <td>Álcool</td>
+                <td>20 a 30</td>
+                <td>5%</td>
+                <td>R$ 5,00</td>
+            </tr>
+            <tr>
+                <td>Álcool</td>
+                <td>+30</td>
+                <td>10%</td>
+                <td>R$ 5,00</td>
+            </tr>
+        </table>
+    </div>
+    <div class="conteudo">
+        <div class="titulo">
+            <h2>Bem vindo!</h2>
+        </div>
+        <div class="grupo">
+            <label for="qtd">Litros:</label>
+            <input type="number" id="qtd" name="qtd" step="0.1" required>
+        </div>
+
+        <div class="grupo">
+            <label for="combustivel">Selecione o tipo:</label>
+            <select id="combustivel" name="combustivel">
+                <option value="selecione">Selecione</option>
+                <option value="alcool">Álcool</option>
+                <option value="gasolina">Gasolina</option>
+            </select>
+        </div>
+        <div class="grupo">
+            <button type="submit" id="btn" name="btn" onclick="calcular()">
+                Calcular
+            </button>
+        </div>
+        <div class="result">
+            resultado: <br>
+            <p id="resultado" class="result"></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

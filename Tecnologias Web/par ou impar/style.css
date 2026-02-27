@@ -1,0 +1,37 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+.section {
+    background-color: #e6e6e6;
+    width: 500px;
+    border: 1px solid #ffffff;
+    border-radius: 18px;
+    padding: 18px;
+    margin-bottom: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+input {
+    width: 100%;
+    border-radius: 10px;
+    border-color: darkgrey;
+    padding: 9px;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: rgb(134, 134, 134);
+    border: none;
+    color: white;
+    padding: 9px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.result{
+    font: bold;
+}
