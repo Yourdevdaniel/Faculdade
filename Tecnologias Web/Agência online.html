@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agencia</title>
+    <style>
+        html {
+      scroll-behavior: smooth;
+        }
+
+      body {
+          margin: 0;
+          padding: 0;
+          background-color: whitesmoke;
+      }
+
+      header {
+          text-align: center;
+          background-color: rgb(34, 34, 34);
+          color: white;
+          padding: 20px;
+      }
+
+      .menu {
+          background-color: #333;
+          color: white;
+          padding: 10px;
+      }
+
+      .menu a{
+          text-decoration: none;
+          color: white;
+          margin: 0 10px;
+      }
+
+
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+      }
+
+      #sobre,
+      #contato {
+          background-color: rgb(201, 201, 201);
+          margin: 15px ;
+          padding: 15px;
+          border-radius: 5px;
+      }
+
+      #servicos {
+          text-align: center;
+          background-color: rgb(201, 201, 201);
+          margin: 15px ;
+          padding: 15px;
+          border-radius: 5px;
+      }
+
+      .servicos-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 40px;
+          flex-wrap: wrap;
+      }
+
+      .card {
+          width: 240px;
+          border: 1px solid gray;
+          border-radius: 16px;
+          padding: 14px;
+          background-color: whitesmoke;
+      }
+
+      .card img {
+          width: 200px;
+      }
+
+      footer {
+          text-align: center;
+          background-color: rgb(34, 34, 34);
+          color: white;
+          padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Agência Digital XYZ</h1>
+    </header>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>
+Na Agência Digital XYZ, transformamos talento em sucesso. Especializados em moda e entretenimento, cuidamos de cada detalhe da carreira de nossos modelos, desde o primeiro casting até oportunidades internacionais.
+
+Com uma equipe apaixonada por estilo, inovação e tendências, oferecemos suporte completo: portfólio profissional, produção de ensaios, treinamento personalizado e gestão de imagem digital.
+
+Nosso objetivo é revelar o potencial único de cada modelo, conectando-os às melhores oportunidades do mercado e criando experiências memoráveis para marcas e talentos. Aqui, a sua carreira é nossa prioridade, e cada projeto é uma história de sucesso em construção.
+        </p>
+      </section>
+
+      <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-container">
+          <div class="card">
+            <img src="img/gestao.jpg" alt="Simbolo de Gestão" />
+            <h3>Gestão de Carreira de Modelos</h3>
+            <p>
+              Acompanhamento personalizado para cada modelo, com planejamento de carreira, desenvolvimento de portfólio e direcionamento para oportunidades no mercado.
+            </p>
+          </div>
+          <div class="card">
+            <img src="https://www.galaxus.fr/im/Files/7/6/9/4/9/2/2/0/csm_OM_System_OM-5_IIb_416d19563b21.png?impolicy=teaser&resizeWidth=200&resizeHeight=100" alt="imagem de camera" />
+            <h3>Produção de Ensaios Fotográficos</h3>
+            <p>
+              Serviço completo de ensaios de moda, editoriais e campanhas publicitárias, incluindo maquiadores, stylists e fotógrafos renomados..
+            </p>
+          </div>
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQJ5ES4DkHyvhPyuwk6kA6Z8m-iWF5L5jamA&s" alt="imagem de eventos" />
+            <h3>Casting para Eventos e Marcas</h3>
+            <p>
+              Seleção e fornecimento de modelos para desfiles, comerciais, lançamentos de coleções e campanhas de grandes marcas.
+            </p>
+          </div>
+          <div class="card">
+            <img src="https://24newshd.tv/digital_images/small/2021-06-07/us-navy-uses-drone-to-refuel-plane-during-flight-1623083221-4360.jpg" alt="avião" />
+            <h3>Agenciamento Internacional</h3>
+            <p>
+              Conexão de modelos com agências parceiras no exterior, auxiliando em contratos, viagens e adaptação cultural. 
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato">
+        <h2>Contato</h2>
+        <p><b>Email:</b> contato@agenciadigitalxyz.com</p>
+        <p><b>Telefone: </b> (11) 91234-5678</p>
+        <p><b>Endereço: </b> Rua da Moda, 456 – Centro, São Paulo, SP</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 - Agência Digital XYZ</p>
+    </footer>
+  </body>
+</html>

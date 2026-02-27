@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Contato</title>
+    <style>
+        body {
+            background-color: #ccc;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .form-conteudo {
+            width: 500px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        .form-grupo {
+        margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .text-bold {
+            font-weight: bold;
+        }
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #007BFF;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        .input-radio,
+        .checkbox {
+        width: auto;
+        }
+        button {
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #btnCadastrar {
+        background-color: #007bff;
+        }
+        #btnLimpar {
+            background-color: #e80f0f;
+        }
+        #btnCadastrar:hover {
+        background-color: #0056b3;
+        }
+        #btnLimpar:hover {
+        background-color: #b20202;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="form-conteudo">
+        <form action="#" method="post">
+       
+        <div class="form-grupo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+        </div>
+       
+        <div class="form-grupo">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+       
+        <div class="form-grupo">
+         <label for="Assunto">Assunto:</label>
+         <select id="Assunto" name="Assunto">
+            <option value="selecione">Selecione</option>
+          <option value="duvida">Dúvida</option>
+          <option value="reclamacao">Reclamação</option>
+          <option value="sugestao">Sugestão</option>
+         </select>
+        </div>
+       
+        <div class="form-grupo">
+         <label for="mensagem">Mensagem:</label>
+         <textarea id="mensagem" rows="4" cols="40" name="mensagem">
+         </textarea>
+        </div>
+
+        <div class="form-grupo">
+            <label for="satifacao" name="satifacao"><b>Satisfação</b></label>
+            <input type="range" max="10" min="1">
+        </div>
+
+        <div class="form-grupo">
+            <input type="checkbox" class="checkbox" id="termos" name="termos"> <label for="termos" name="termos"><b> Aceito os termos e condições </b></label>
+        </div>
+
+        <div class="form-grupo">
+            <label><b>Informação do Sistema</b></label>
+            <input type="text" id="somenteLeitura" name="somenteLeitura" value="Exemplo" readonly>
+        </div>
+       
+        <div class="form-grupo">
+        <button type="submit" id="btnCadastrar" name="btnCadastrar">
+        Cadastrar
+        </button>
+        <button type="button" id="btnLimpar" name="btnLimpar">
+       Limpar
+        </button>
+        </div>
+       
+        </form>
+       </div>
+    
+</body>
+</html>

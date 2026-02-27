@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro de Cliente</title>
+    <style> 
+    body {
+        background-color: #f5f5f5;
+    }
+    .form-conteudo { 
+        max-width:500px; 
+        margin: 100px auto; 
+        padding: 20px; 
+        border: 1px solid #ddd; 
+        border-radius: 10px; 
+        background-color: white; 
+
+      } 
+    .form-grupo {
+        padding: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+
+    }
+    input, 
+    select { 
+        width: 100%; 
+        padding: 8px; 
+        border: 1px solid #aaa; 
+        border-radius: 4px; 
+        box-sizing: border-box; 
+      } 
+ 
+    input:focus, 
+    select:focus {         
+        border-color: #007BFF;  
+        outline: none;           
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  
+    }      
+    .input-checkbox {
+        width: auto;
+    } 
+ 
+    button {         
+        color: white; 
+        border: none; 
+        cursor: pointer; 
+        margin-right: 10px; 
+        padding: 10px 20px; 
+        border-radius: 4px; 
+        font-size: 14px; 
+        font-weight: bold; 
+      } 
+ 
+    #btnEnv { 
+        background-color: #28a745; 
+      } 
+ 
+    #btnCancel { 
+        background-color: #e80f0f; 
+      } 
+ 
+    #btnEnv:hover { 
+        background-color: #19622a; 
+      } 
+ 
+    #btnCancel:hover { 
+        background-color: #b20202; 
+      }
+
+    </style>
+</head>
+<body>
+    <div class="form-conteudo">
+        <h1>Formulário de Cadastro</h1>
+        <form action="#" method="post"> 
+        <div class="form-grupo"> 
+            <label for="nome">Nome:</label> 
+            <input type="text" id="nome" name="nome" maxlength="100" placeholder="João da Silva" required> 
+        </div>
+
+        <div class="form-grupo"> 
+            <label for="Email">Email:</label> 
+            <input type="email" id="Email" name="Email" required placeholder="joaosilva@gmail.com"> 
+        </div>
+
+        <div class="form-grupo"> 
+            <label for="tel">Telefone:</label> 
+            <input type="number" id="tel" name="tel" required placeholder="(63) 9999-9999"> 
+        </div>
+
+        <div class="form-grupo"> 
+            <label for="data">Data de Nascimento (Opicional):</label> 
+            <input type="date" id="data" name="data"> 
+        </div>
+
+        <div class="form-grupo"> 
+            <label for="plano">Plano Assinatura:</label> 
+            <select id="plano" name="plano">
+                <option value="selecione">Selecione...</option>
+                <option value="basico">Básico</option>
+                <option value="padrao">Padrão</option>
+                <option value="premium">Premium</option>  
+            </select>
+        </div>
+
+        <div class="form-grupo"> 
+            <label for="valor">Valor da assinatura:</label> 
+            <input type="number" id="nome" name="nome" step="0.01" placeholder="40"> 
+        </div>
+
+        <label><b>Receber novidades por e-mail? </b></label> 
+        <input class="input-checkbox" type="checkbox" id="nao" value="nao"> 
+        <label for="nao">Não</label> 
+ 
+        <input class="input-checkbox" type="checkbox" id="sim" value="sim"> 
+        <label for="sim">Sim</label>
+
+        <div class="form-grupo"> 
+            <button type="submit"  id="btnEnv" name="btnEnv"> 
+                Enviar 
+            </button> 
+ 
+            <button type="button" id="btnCancel" name="btnCancel"> 
+                Cancelar 
+            </button> 
+        </div>
+        </form>
+
+    </div>
+
+</body>
+</html>
